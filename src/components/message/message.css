@@ -1,0 +1,73 @@
+.message {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 111;
+   left:  80%;
+   bottom: 0;
+   transform: translateY(-50px);
+    border-radius: 20px;
+}
+.messageLogo {
+    position: absolute;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    left: 0;
+}
+.messageTitle {
+   position: absolute;
+   top: -10px;
+   left: 65px;
+}
+.messageText {
+    position: absolute;
+    top: 20px;
+    left: 65px;
+ }
+ .bar {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 275px;
+    height: 3px;
+    transform: translateX(13px);
+ }
+ .cubeMessage {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: -1;
+    left: 230px;
+    top:50px
+ }
+ .blockOfStick {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    z-index: 1122;
+ transform: translateY(20px) translateX(10px);
+ cursor: pointer;
+ }
+ .stick1 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 1111111;
+ }
+ .stick2 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transform: rotate(135deg);
+    position: absolute;
+    z-index: 1111111;
+ }

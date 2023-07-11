@@ -1,25 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter as Router, Routes, Route, json } from 'react-router-dom';
+import { About } from './components/about/about';
+import { Homepage } from './components/homepage/homepage';
 function App() {
+  fetch('https://api.api-ninjas.com/v1/cats?name=ragdoll?offset=5')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+  {/*
+    <Routes >
+  <Route path="/" element={ <Homepage />} />
+
+</Routes>
+  */}
+
+
+<Routes >
+  <Route path="/" element={ <Homepage />} />
+  <Route path="/about" element={ <About />} />
+</Routes>
     </div>
   );
 }
 
 export default App;
+
+//https://monsterspost.com/ru/codepens-ot-svjatogo-valentina-podborka/
